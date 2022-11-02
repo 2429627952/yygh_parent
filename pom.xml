@@ -111,6 +111,7 @@
                 <version>${aliyun.version}</version>
             </dependency>
 
+
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
