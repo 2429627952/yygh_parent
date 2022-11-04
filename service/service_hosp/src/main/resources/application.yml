@@ -31,6 +31,9 @@ mybatis-plus:
 #      logic-delete-field: 1
 #      logic-not-delete-value: 0
 
+# 日志处理
+#logging:
+#  level: debug
 
 
 
