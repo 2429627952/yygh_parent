@@ -1,0 +1,36 @@
+# 服务端口
+server:
+  port: 8201
+spring:
+  # 服务名
+  application:
+    name: service-hosp
+  # 环境设置：dev、test、prod
+  profiles:
+    active: dev
+  mvc:
+    static-path-pattern: /**
+  # mysql数据库连接
+  datasource:
+    url: jdbc:mysql://localhost:3306/yygh_hosp?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 158369
+    driver-class-name: com.mysql.jdbc.Driver
+  #返回json的全局时间格式
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+#mybatis日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 逻辑删除 此为默认值，如果你的默认值和mp默认的一样,该配置可无
+#  global-config:
+#    db-config:
+#      logic-delete-field: 1
+#      logic-not-delete-value: 0
+
+
+
+
